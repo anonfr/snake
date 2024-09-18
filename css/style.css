@@ -8,11 +8,13 @@ body {
     background-color: #f0f0f0;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
+    --border-color: #000000; /* Black border for day mode */
 }
 
 body.night-mode {
     background-color: #000000;
     color: #f0f0f0;
+    --border-color: #ffffff; /* White border for night mode */
 }
 
 .game-container {
@@ -43,7 +45,7 @@ h1 {
 }
 
 canvas {
-    border: 3px solid #ffffff;
+    border: 3px solid var(--border-color); /* Use the variable here */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 100%;
@@ -51,17 +53,9 @@ canvas {
     margin-bottom: 10px;
 }
 
-body.night-mode canvas {
-    border-color: #ffffff;
+#game-board {
+    border: 2px solid var(--border-color); /* Use the variable here as well */
 }
-
-#ton-connect-button {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-}
-
-
 
 #gameControls {
     display: flex;
@@ -139,7 +133,9 @@ body.night-mode canvas {
 
 /* Style for the TON Connect button */
 #ton-connect-button {
-    margin-bottom: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
 #ton-connect-button button {
