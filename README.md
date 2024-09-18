@@ -9,6 +9,6 @@ A sleek and addictive modern take on the classic Snake game.
 
 Try to beat your high score in this challenging yet fun game!
 
-[Play Anon Snake Game for free now!](https://anonfr.github.io/snake_game/)
+[Play Anon Snake Game for free now!](https://anonfr.github.io/snake/)
 
 Developed by [@AnonfrXBT](https://t.me/AnonfrXBT)
